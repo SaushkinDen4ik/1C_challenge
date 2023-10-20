@@ -14,6 +14,7 @@ func init() {
 	for i := 'A'; i <= 'Z'; i++ {
 		alphabet = append(alphabet, string(i))
 	}
+	alphabet = append(alphabet, string('\n'))
 }
 
 func CompareFiles(precision float64, first, second FileAndContent) { // assume that len(first) >= len(second)
